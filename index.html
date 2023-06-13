@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NyxWE</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div><img class="logo" src="image/NyxLogo.png" alt="NyxWE Logo" /></div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li>
+            <a href="#">Blog</a>
+            <ul>
+              <li><a href="news.html">News</a></li>
+              <li><a href="articels.html">Articles</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+            <ul>
+              <li>
+                <a
+                  title="Instagram"
+                  href="https://www.Instagram.com/nyxwe"
+                  target="_blank"
+                >
+                  <p>Instagram</p>
+                </a>
+              </li>
+              <li>
+                <a
+                  title="Telegram"
+                  href="https://www.telegram.me/NyxWE"
+                  target="_blank"
+                >
+                  <p>Telegram</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <div class="login">
+          <ul>
+            <li>
+              <a href="#" id=".signupnav">Signup</a>
+              <ul>
+                <li><a href="login.html" id="login-button">Login</a></li>
+                <li><a href="signin.html" id="signup-button">Sign Up</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <img
+        class="hero img"
+        src="./image/XboxShow.jpg"
+        alt="topest News"
+      />
+    </div>
+
+    <section class=".services">
+      <a href=""></a>
+      <div class="service">
+        <img src="./image/SummerG.jpg" alt="Service 1" />
+        <div class="overlay">
+          <div class="text">Summer Game Festival</div>
+        </div>
+      </div>
+      <a href=""></a>
+      <div class="service">
+        <img src="https://via.placeholder.com/350x200" alt="Service 2" />
+        <div class="overlay">
+          <div class="text">Xbox Showcase Review</div>
+        </div>
+      </div>
+      <a href=""></a>
+      <div class="service">
+        <img src="https://via.placeholder.com/350x200" alt="Service 3" />
+        <div class="overlay">
+          <div class="text">Upcoming PC Gaming Show</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Latest Blog Posts and News</h2>
+      <p>Sign up for our newsletter and stay up to date.</p>
+      <a href="signin.html" class="btn">Sign Up</a>
+    </section>
+
+    <section class="new posts">
+      <h2 class="lnh2">Other News and article</h2>
+      <hr />
+      <div class="post">
+        <p>
+          <img src="./image/SummerG.jpg" alt="Blog Post 1" />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, sit?
+          Velit expedita assumenda rerum dicta eligendi reprehenderit deleniti
+          blanditiis commodi maiores, quas animi porro laudantium a minus magnam
+          qui accusamus.
+        </p>
+      </div>
+      <hr />
+      <div class="post">
+        <p>
+          <img src="https://via.placeholder.com/350x200" alt="Blog Post 2" />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, sit?
+          Velit expedita assumenda rerum dicta eligendi reprehenderit deleniti
+          blanditiis commodi maiores, quas animi porro laudantium a minus magnam
+          qui accusamus.
+        </p>
+      </div>
+      <hr />
+      <div class="post">
+        <p>
+          <img src="https://via.placeholder.com/350x200" alt="Blog Post 3" />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, sit?
+          Velit expedita assumenda rerum dicta eligendi reprehenderit deleniti
+          blanditiis commodi maiores, quas animi porro laudantium a minus magnam
+          qui accusamus.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; &nbsp;<strong>Nyx ward entertainmet</strong></p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signup-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <input type="submit" value="Sign Up" />
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
