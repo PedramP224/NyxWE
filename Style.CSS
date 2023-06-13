@@ -351,13 +351,13 @@ section.new.posts {
 .infimg1 {
   float: left;
   margin: 15px;
-  border-radius: 50%;
 }
 
 .infimg2 {
   float: right;
   margin: 15px;
   border-radius: 50%;
+  max-width: 250px;
 }
 
 footer {
@@ -369,4 +369,10 @@ footer {
 
 .menu {
   max-width: 990px;
+}
+
+.NAimg {
+  width: 200;
+  height: 150;
+  max-width: 200px;
 }
