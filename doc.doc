@@ -448,9 +448,8 @@ max-width: 990px; - Specifies the maximum width of the .menu element.
 
 |Others|
 .NAimg
-width: 200; - Specifies the width of the .NAimg element. (missing unit of measurement)
-height: 150; - Specifies the height of the .NAimg element. (misssing unit of measurement)
-max-width: 200px; - Specifies the maximum width of the .NAimg element.
+width: 200px; - Specifies the width of the .NAimg element.
+height: 150px; - Specifies the height of the .NAimg element.
 
 .Social
 padding: 5px; - Specifies the padding on all sides of the .Social element.
@@ -475,3 +474,168 @@ width: 200px; - Specifies the width of the .box element.
 padding: 20px; - Specifies the padding on all sides of the .box element.
 margin: auto; - Specifies that the .box element should be centered horizontally within its parent element.
 border: 5px rgba(0, 0, 0, 0.2); - Specifies the border width, style, and color for the .box element.
+
+|index.html|
+1. Header and Navigation
+The header contains the website's logo, main navigation menu, and a burger menu for mobile devices.
+The main navigation menu includes links to the Home, About, Blog (with News and Articles submenus), and Contact (with Instagram and Telegram submenus) pages.
+The login and sign-up functionality is also available in the header.
+
+2. Hero Image
+This section displays a large image that showcases a featured news item or article.
+
+3. Services
+This section highlights three featured services or topics.
+Each service is represented by a thumbnail image and overlay text.
+Users can click on the images to navigate to the related content.
+
+4. Call to Action
+This section invites users to sign up for the website's newsletter to stay informed about the latest blog posts and news.
+
+5. News and Articles
+This section presents a list of additional news and articles.
+Each entry includes an image, a brief introduction text, and a horizontal rule separating it from the next entry.
+
+6. Footer
+The footer contains copyright information and the name of the website.
+
+|Head|
+<meta charset="utf-8" /> - Specifies the character encoding for the HTML document as UTF-8, which supports a wide range of characters from different languages and alphabets.
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> - Specifies the viewport settings for the HTML document, which affects how the content is displayed on different devices.
+Here, the width=device-width property sets the width of the viewport to the width of the device, and the initial-scale=1.0 property sets the initial zoom level to 100%.
+<title>NyxWE</title> - Specifies the title of the HTML document, which appears in the browser tab or window title bar.
+<link rel="stylesheet" type="text/css" href="style.css" /> - Specifies an external CSS stylesheet to be used for styling the HTML document.
+The rel="stylesheet" attribute indicates that this is a stylesheet, the type="text/css" attribute specifies the type of the stylesheet, and the href="style.css" attribute specifies the URL or file path to the stylesheet.
+
+|Header|
+<header> - Defines the header section of the web page.
+<nav> - Defines a container for navigation links.
+<div><img class="logo" src="image/NyxLogo.png" alt="NyxWE Logo" /></div> - Defines a container for the NyxWE logo.
+<ul> - Defines an unordered list of navigation links.
+<li><a href="index.html">Home</a></li> - Defines a list item that contains a link to the Home page.
+<li><a href="about.html">About</a></li> - Defines a list item that contains a link to the About page.
+<li><a href="#">Blog</a> - Defines a list item that contains a link to the Blog page. The href="#" attribute specifies that the link does not currently have a valid destination.
+<ul> - Defines a nested unordered list of links for the Blog page.
+<li><a href="news.html">News</a></li> - Defines a nested list item that contains a link to the News page.
+<li><a href="articels.html">Articles</a></li> - Defines a nested list item that contains a link to the Articles page.
+<li><a href="#">Contact</a> - Defines a list item that contains a link to the Contact page.
+<ul> - Defines a nested unordered list of links for the Contact page.
+<li><a title="Instagram" href="https://www.Instagram.com/nyxwe" target="_blank"><p>Instagram</p></a></li> - Defines a nested list item that contains a link to the NyxWE Instagram page.
+<li><a title="Telegram" href="https://www.telegram.me/NyxWE" target="_blank"><p>Telegram</p></a></li> - Defines a nested list item that contains a link to the NyxWE Telegram page.
+<div class="burger"> - Defines a container for a hamburger menu icon used for mobile devices.
+<div class="line1"></div> - Defines the first line of the hamburger menu icon.
+<div class="line2"></div> - Defines the second line of the hamburger menu icon.
+<div class="line3"></div> - Defines the third line of the hamburger menu icon.
+<div class="login"> - Defines a container for a login/signup button.
+<li><a href="#" id=".signupnav">Signup</a> - Defines a list item that contains a link to the Signup page.
+The id=".signupnav" attribute specifies the ID of the element for CSS styling and JavaScript manipulation.
+<ul> - Defines a nested unordered list of links for the Signup page.
+<li><a href="login.html" id="login-button">Login</a></li> - Defines a nested list item that contains a link to the Login page.
+<li><a href="signin.html" id="signup-button">Sign Up</a></li> - Defines a nested list item that contains a link to the Sign Up page.
+
+|hero and upper section|
+<div class="hero"> - Defines a container for the hero section of the web page.
+<img class="hero img" src="./image/XboxShow.jpg" alt="topest News" /> - Defines an image element that represents the top news of the web page.
+The class="hero img" attribute specifies the class name for the element for CSS styling.
+</div> - Closes the hero container.
+<section class=".services"> - Defines a container for the services section of the web page.
+The class=".services" attribute specifies the class name for the element for CSS styling.
+<a href=""></a> - Defines a link element that is currently empty.
+<div class="service"> - Defines a container for a service item.
+<img src="./image/SummerG.jpg" alt="Top 1" /> - Defines an image element that represents the top 1 service item.
+<div class="overlay"> - Defines a container for an overlay element used for displaying text over the image.
+<div class="text">Summer Game Festival</div> - Defines a text element that represents the title of the service item.
+</div> - Closes the overlay container.
+</div> - Closes the service container.
+<a href=""></a> - Defines a link element that is currently empty.
+<div class="service"> - Defines a container for a service item.
+<img src="./image/XboxShow.jpg" alt="Top 2" /> - Defines an image element that represents the top 2 service item.
+<div class="overlay"> - Defines a container for an overlay element used for displaying text over the image.
+<div class="text">Xbox Showcase Review</div> - Defines a text element that represents the title of the service item.
+</div> - Closes the overlay container.
+</div> - Closes the service container.
+<a href=""></a> - Defines a link element that is currently empty.
+<div class="service"> - Defines a container for a service item.
+<img src="./image/PCGaming s.png" alt="Top 3" /> - Defines an image element that represents the top 3 service item.
+<div class="overlay"> - Defines a container for an overlay element used for displaying text over the image.
+<div class="text">Upcoming PC Gaming Show</div> - Defines a text element that represents the title of the service item.
+</div> - Closes the overlay container.
+</div> - Closes the service container.
+</section> - Closes the services container.
+
+|CTA|
+<section class="cta"> - Defines a container for the CTA section of the web page. The class="cta" attribute specifies the class name for the element for CSS styling.
+<h2>Latest Blog Posts and News</h2> - Defines a heading element that represents the title of the CTA section.
+<p>Sign up for our newsletter and stay up to date.</p> - Defines a paragraph element that represents the description of the CTA section.
+<a href="signin.html" class="btn">Sign Up</a> - Defines a link element that represents the call-to-action button.
+The href="signin.html" attribute specifies the URL or file path for the Sign Up page, and the class="btn" attribute specifies the class name for the element for CSS styling.
+
+|lower section|
+<section class="new posts"> - Defines a container for the section that displays other news and articles on the web page. The class="new posts" attribute specifies the class name for the element for CSS styling.
+<h2 class="lnh2">Other News and article</h2> - Defines a heading element that represents the title of the section. The class="lnh2" attribute specifies the class name for the element for CSS styling.
+<hr /> - Defines a horizontal rule element used as a divider between each post.
+<div class="post"> - Defines a container for a post item. The class="post" attribute specifies the class name for the element for CSS styling.
+<p> - Defines a paragraph element that contains the content of the post item.
+<img src="./image/SummerG.jpg" alt="Blog Post 1" /> - Defines an image element that represents the post item.
+The src="./image/SummerG.jpg" attribute specifies the file path for the image, and the alt="Blog Post 1" attribute specifies the alternative text description for the image.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, sit? Velit expedita assumenda rerum dicta eligendi reprehenderit deleniti blanditiis commodi maiores, quas animi porro laudantium a minus magnam qui accusamus. - Represents the content of the post item.
+</p> - Closes the paragraph element.
+</div> - Closes the post container.
+<hr /> - Defines a horizontal rule element used as a divider between each post.
+<div class="post"> - Defines a container for a post item. The class="post" attribute specifies the class name for the element for CSS styling.
+<p> - Defines a paragraph element that contains the content of the post item.
+<img src="./image/Boltgun.png" alt="Blog Post 2" /> - Defines an image element that represents the post item.The src="./image/Boltgun.png" attribute specifies the file path for the image, and the alt="Blog Post 2" attribute specifies the alternative text description for the image.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, sit? Velit expedita assumenda rerum dicta eligendi reprehenderit deleniti blanditiis commodi maiores, quas animi porro laudantium a minus magnam qui accusamus. - Represents the content of the post item.
+</p> - Closes the paragraph element.
+</div> - Closes the post container.
+<hr /> - Defines a horizontal rule element used as a divider between each post.
+<div class="post"> - Defines a container for a post item. The class="post" attribute specifies the class name for the element for CSS styling.
+<p> - Defines a paragraph element that contains the content of the post item.
+<img src="./image/Mirage.png" alt="Blog Post 3" /> - Defines an image element that represents the post item.
+The src="./image/Mirage.png" attribute specifies the file path for the image, and the alt="Blog Post 3" attribute specifies the alternative text description for the image.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, sit? Velit expedita assumenda rerum dicta eligendi reprehenderit deleniti blanditiis commodi maiores, quas animi porro laudantium a minus magnam qui accusamus. - Represents the content of the post item.
+</p> - Closes the paragraph element.
+</div> - Closes the post container.
+</section> - Closes the section that displays other news and articles.
+
+|footer|
+<footer class="footer"> - Defines a container for the footer section of the web page.
+The class="footer" attribute specifies the class name for the element for CSS styling.
+<p> - Defines a paragraph element that contains the content of the footer section.
+&copy; &nbsp;<strong>Nyx ward entertainmet</strong> - Represents the content of the footer section.
+The &copy; entity represents the copyright symbol, and the &nbsp; entity represents a non-breaking space.
+</p> - Closes the paragraph element.
+</footer> - Closes the footer container
+
+|about.html|
+<section class="infC GinfC"> - Defines a container for the section that contains information about the company or brand. The class="infC GinfC" attribute specifies the class name for the element for CSS styling.
+<h2 class="lnh2 infH">About</h2> - Defines a heading element that represents the title of the section. The class="lnh2 infH" attribute specifies the class name for the element for CSS styling.
+<div> - Defines a container for the content of the section.
+<p> - Defines a paragraph element that contains the content of the section.
+<img class="infimg2" src="./image/NyxLogo.png" alt="second Nyx logo" /> - Defines an image element that represents an image related to the content of the section.
+The class="infimg2" attribute specifies the class name for the element for CSSstyling, the src="./image/NyxLogo.png" attribute specifies the file path for the image, and the alt="second Nyx logo" attribute specifies the alternative text description for the image.
+</p> - Closes the paragraph element.
+</div> - Closes the container for the content of the section.
+</section> - Closes the container for the section that contains information about the company or brand.
+
+|News.html|
+all same with lower section exept for NAimg class
+
+|login.html|
+<main> - Defines the main content of the webpage.
+<div class="box"> - Defines a container for the login form. The class="box" attribute specifies the class name for the element for CSS styling.
+<h1>Login</h1> - Defines a heading element that represents the title of the login form.
+<form> - Defines a container for the form elements.
+<label for="email">Email:</label> - Defines a label element that represents the label for the email input field. The for="email" attribute associates the label element with the email input field.
+<input type="email" id="email" required /> - Defines an input element that represents the email input field.
+The type="email" attribute specifies that the input field should accept email addresses, the id="email" attribute specifies the id of the input field for JavaScript manipulation, and the required attribute specifies that the input field is required.
+<hr /> - Defines a horizontal rule element that separates the email input field from the password input field.
+<label for="password">Password:</label> - Defines a label element that represents the label for the password input field. The for="password" attribute associates the label element with the password input field.
+<input type="password" id="password" required /> - Defines an input element that represents the password input field.
+The type="password" attribute specifies that the input field should accept password inputs and mask the entered characters, the id="password" attribute specifies the id of the input field for JavaScript manipulation, and the required attribute specifies that the input field is required.
+<hr /> - Defines a horizontal rule element that separates the password input field from the login button.
+<button type="submit">Login</button> - Defines a button element that represents the login button.
+The type="submit" attribute specifies that the button should submit the form data when clicked, and the text "Login" inside the button represents the label for the button.
+</form> - Closes the container for the form elements.
+</div> - Closes the container for the login form.
+</main> - Closes the main content of the webpage.
