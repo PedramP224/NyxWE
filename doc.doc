@@ -1,0 +1,409 @@
+CSS Documentation
+designed for a responsive website 
+
+|Global style|
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+* selector targets all elements on the page, setting the box-sizing property to border-box, and removing margin and padding from all elements
+
+html {
+  background-color: rgba(40, 15, 50, 0.2);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+The html and body elements are styled with a background color and full height. The body element also has a font family defined, a minimum height of 100 viewport height units, and is displayed as a flex container with a column direction.
+
+|Header and Navigation|
+/Header and Navigation/
+The header and nav sections of the CSS file define the styles for the website's header and navigation bar. The header has a background image, font family, and font size specified. The navigation bar uses flexbox for alignment and positioning.
+/Dropdown Menu/
+The dropdown menu is hidden by default, with a display: none property. When the parent list item is hovered, the dropdown menu is displayed.
+/Burger Menu/
+The burger menu icon is hidden by default with the display: none property. It is intended to be shown on smaller devices when the traditional navigation menu is hidden.
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+display: flex; - Specifies that the nav element should be a flexible container, allowing its child elements to be laid out in a flexible manner.
+flex-wrap: wrap; - Specifies that if the child elements of nav can't fit on one line, they should wrap to the next line.
+align-items: center; - Specifies that child elements of nav should be vertically centered.
+justify-content: space-between; - Specifies that child elements of nav should be horizontally spaced out evenly, with extra space between each element.
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 1px;
+  padding: 2px;
+}
+display: flex; - Specifies that the ul element should be a flexible container, allowing its child elements to be laid out in a flexible manner.
+list-style: none; - Specifies that the default bullet point list style should be removed from the ul element.
+margin: 1px; - Specifies the margin around the ul element.
+padding: 2px; - Specifies the padding inside the ul element.
+
+nav ul li {
+  margin: 0 10px;
+}
+margin: 0 10px; - Specifies the margin around each li element within the ul.
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+display: block; - Specifies that the a element should be a block-level element, taking up the full width available in its parent element.
+padding: 10px; - Specifies the padding inside the a element.
+color: #fff; - Specifies the text color of the a element.
+text-decoration: none; - Specifies that the default underline decoration on the a element should be removed.
+transition: all 0.3s ease; - Specifies that any CSS property changes on the a element should be transitioned smoothly over 0.3 seconds.
+
+nav ul li a:hover {
+  background-color: #000000;
+  color: #fff;
+}
+background-color: #000000; - Specifies the background color of the a element when the mouse hovers over it.
+color: #fff; - Specifies the text color of the a element when the mouse hovers over it.
+
+nav ul li.dropdown {
+  position: relative;
+}
+position: relative; - Specifies that the li element should be positioned relative to its normal position within the ul.
+
+nav ul li.dropdown ul.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #3b0422bd;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-top: none;
+  z-index: 1;
+}
+display: none; - Specifies that the dropdown content should be hidden by default.
+position: absolute; - Specifies that the dropdown content should be positioned absolutely, relative to the nearest positioned ancestor element.
+top: 100%; - Specifies the distance between the top of the dropdown content and the bottom of its parent element.
+left: 0; - Specifies the distance between the left edge of the dropdown content and the left edge of its parent element.
+width: 100%; - Specifies the width of the dropdown content.
+padding: 10px; - Specifies the padding inside the dropdown content.
+background-color: #3b0422bd; - Specifies the background color of the dropdown content.
+border: 1px solid rgba(0, 0, 0, 0); - Specifies that the dropdown content should have a solid border with no color.
+border-top: none; - Specifies that the top border of the dropdown content should be removed.
+z-index: 1; - Specifies the stacking order of the dropdown content.
+
+nav ul li.dropdown:hover ul.dropdown-content {
+  display: block;
+}
+display: block; - Specifies that the dropdown content should be displayed when the mouse hovers over its parent li.dropdown element.
+
+nav .burger {
+  display: none;
+  cursor: pointer;
+}
+display: none; - Specifies that the hamburger menu icon should not be displayed by default.
+cursor: pointer; - Specifies that the cursor should change to a pointer when hovering over the hamburger menu icon.
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+width: 80px; - Specifies the width of the .logo element.
+height: 80px; - Specifies the height of the .logo element.
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+list-style: none; - Specifies that the default bullet point list style should be removed from the ul element.
+display: flex; - Specifies that the ul element should be a flexible container, allowing its child elements to be laid out in a flexible manner.
+flex-wrap: wrap; - Specifies that if the child elements of ul can't fit on one line, they should wrap to the next line.
+align-items: center; - Specifies that child elements of ul should be vertically centered.
+justify-content: space-between; - Specifies that child elements of ul should be horizontally spaced out evenly, with extra space between each element.
+
+li {
+  margin: 0 1rem;
+}
+margin: 0 1rem; - Specifies the margin around each li element within the ul.
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+color: #fff; - Specifies the text color of the a element.
+text-decoration: none; - Specifies that the default underline decoration on the a element should be removed.
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+display: none; - Specifies that the hamburger menu icon should not be displayed by default.
+cursor: pointer; - Specifies that the cursor should change to a pointer when hovering over the hamburger menu icon.
+.burger div - Specifies the styling for the three div elements that make up the hamburger menu icon.
+width: 25px; - Specifies the width of each div element.
+height: 3px; - Specifies the height of each div element.
+background-color: #fff; - Specifies the background color of each div element.
+margin: 5px; - Specifies the margin between each div element.
+transition: all 0.3s ease; - Specifies that any CSS property changes on the div elements should be transitioned smoothly over 0.3 seconds.
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+width: 25px; - Specifies the width of each div element.
+height: 3px; - Specifies the height of each div element.
+background-color: #fff; - Specifies the background color of each div element.
+margin: 5px; - Specifies the margin between each div element.
+transition: all 0.3s ease; - Specifies that any CSS property changes on the div elements should be transitioned smoothly over 0.3 seconds.
+
+.login {
+  display: flex;
+  align-items: center;
+}
+display: flex; - Specifies that the login element should be a flexible container, allowing its child elements to be laid out in a flexible manner.
+align-items: center; - Specifies that child elements of login should be vertically centered.
+
+#login-button {
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+padding: 0.5rem 1rem; - Specifies the padding inside the #login-button element.
+margin-right: 1rem; - Specifies the margin on the right side of the #login-button element.
+cursor: pointer; - Specifies that the cursor should change to a pointer when hovering over the #login-button element.
+
+#signup-button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+padding: 0.5rem 1rem; - Specifies the padding inside the #signup-button element.
+cursor: pointer; - Specifies that the cursor should change to a pointer when hovering over the #signup-button element.
+
+|hero and upper section of body|
+/Hero Section/
+The hero section contains a background image, specified dimensions, and flexbox properties for centering its content.
+/Services Section/
+The services section is styled with a flex container for horizontal alignment, and individual .service elements have hover effects with an overlay and text.
+
+.hero {
+  background-position: center;
+  margin-bottom: 10vh;
+  margin: 20px auto;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+background-position: center; - Specifies the position of the background image within the hero element.
+margin-bottom: 10vh; - Specifies the margin on the bottom of the hero element.
+margin: 20px auto; - Specifies the margin on the top and bottom of the hero element and auto on the left and right.
+max-width: 1000px; - Specifies the maximum width of the hero element.
+display: flex; - Specifies that the hero element should be a flexible container, allowing its child elements to be laid out in a flexible manner.
+flex-direction: column; - Specifies that child elements of hero should be laid out in a column.
+align-items: center; - Specifies that child elements of hero should be vertically centered.
+justify-content: center; - Specifies that child elements of hero should be horizontally centered.
+text-align: center; - Specifies that the text within child elements of hero should be centered.
+cursor: pointer; - Specifies that the cursor should change to a pointer when hovering over the hero element.
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+font-size: 3rem; - Specifies the font size for the h1 element within hero.
+margin-bottom: 1rem; - Specifies the margin on the bottom of the h1 element within hero.
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+font-size: 1.5rem; - Specifies the font size for the p element within hero.
+margin-bottom: 2rem; - Specifies the margin on the bottom of the p element within hero.
+
+.hero img {
+  contain: content;
+}
+contain: content; - Specifies that the img element should be scaled to fit its container element.
+
+.btn {
+  background-color: rgba(50, 150, 100, 1);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.5);
+}
+background-color: rgba(50, 150, 100, 1); - Specifies the background color of the .btn element.
+color: #fff; - Specifies the text color of the .btn element.
+border: none; - Specifies that the .btn element should have no border.
+padding: 0.5rem 1rem; - Specifies the padding inside the .btn element.
+cursor: pointer; - Specifies that the cursor should change to a pointer when hovering over the .btn element.
+box-shadow: rgba(0, 0, 0, 0.5); - Specifies the box shadow of the .btn element.
+
+.services {
+  position: relative;
+  width: 80%;
+  margin-top: 0%;
+  display: flex;
+}
+position: relative; - Specifies that the .services element should be positioned relative to its normal position on the page.
+width: 80%; - Specifies the width of the .services element.
+margin-top: 0%; - Specifies the margin on the top of the .services element.
+display: flex; - Specifies that the .services element should be a flexible container, allowing its child elements to be laid out in a flexible manner.
+
+.service {
+  float: left;
+  width: 33.33%;
+  position: relative;
+  cursor: pointer;
+}
+float: left; - Specifies that the .service element should be floated to the left.
+width: 33.33%; - Specifies the width of the .service element.
+position: relative; - Specifies that the .service element should be positioned relative to its normal position within .services.
+cursor: pointer; - Specifies that the cursor should change to a pointer when hovering over the .service element.
+
+.service img {
+  width: 100%;
+}
+width: 100%; - Specifies the width of the img element within .service.
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+position: absolute; - Specifies that the .overlay element should be positioned absolutely, relative to the nearest positioned ancestor element.
+top: 0; - Specifies the distance between the top of the .overlay element and the top of its parent element.
+left: 0; - Specifies the distance between the left edge of the .overlay element and the left edge of its parent element.
+width: 100%; - Specifies the width of the .overlay element.
+height: 100%; - Specifies the height of the .overlay element.
+background: rgba(0, 0, 0, 0.7); - Specifies the background color and transparency of the .overlay element.
+visibility: hidden; - Specifies that the .overlay element should be hidden by default.
+opacity: 0; - Specifies the opacity of the .overlay element.
+transition: all 0.5s ease;- Specifies that any CSS property changes on the .overlay element should be transitioned smoothly over 0.5 seconds.
+
+.text {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+color: #fff; - Specifies the text color of the .text element.
+position: absolute; - Specifies that the .text element should be positioned absolutely, relative to the nearest positioned ancestor element.
+top: 50%; - Specifies the distance between the top of the .text element and the top of its parent element.
+left: 50%; - Specifies the distance between the left edge of the .text element and the left edge of its parent element.
+transform: translate(-50%, -50%); - Specifies that the .text element should be positioned in the center of its parent element.
+visibility: hidden; - Specifies that the .text element should be hidden by default.
+opacity: 0; - Specifies the opacity of the .text element.
+transition: all 0.5s ease; - Specifies that any CSS property changes on the .text element should be transitioned smoothly over 0.5 seconds.
+
+.service:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+Specifies that when the mouse hovers over the .service element, the .overlay element within it should become visible.
+visibility: visible; - Specifies that the .overlay element should become visible when hovering over the .service element.
+opacity: 1; - Specifies that the opacity of the .overlay element should be increased to 1 when hovering over the .service element.
+
+.service:hover .text {
+  visibility: visible;
+  opacity: 1;
+}
+Specifies that when the mouse hovers over the .service element, the .text element within it should become visible.
+visibility: visible; - Specifies that the .text element should become visible when hovering over the .service element.
+opacity: 1; - Specifies that the opacity of the .text element should be increased to 1 when hovering over the .service element.
+
+|CTA = Call To Action|
+The CTA section has a solid background color, padding, and centered text. The .btn class is styled to look like a button with a background color, text color, and box shadow.
+
+.cta {
+  background-color: rgba(80, 30, 100, 1);
+  padding: 4rem 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+background-color: rgba(80, 30, 100, 1); - Specifies the background color of the .cta element.
+padding: 4rem 0; - Specifies the padding on the top and bottom of the .cta element.
+text-align: center; - Specifies that the text within the .cta element should be centered.
+color: rgba(255, 255, 255, 1); - Specifies the text color of the .cta element.
+
+.cta h2
+font-size: 2rem; - Specifies the font size for the h2 element within .cta.
+margin-bottom: 2rem; - Specifies the margin on the bottom of the h2 element within .cta.
+
+.cta p
+font-size: 1.5rem; - Specifies the font size for the p element within .cta.
+margin-bottom: 2rem; - Specifies the margin on the bottom of the p element within .cta.
+
+|Post section|
+section.new.posts
+margin: 0 auto; - Specifies the margin on the top and bottom of the section element and auto on the left and right.
+max-width: 800px; - Specifies the maximum width of the section element.
+padding: 20px; - Specifies the padding on the top and bottom of the section element.
+
+.lnh2
+color: rgb(39, 2, 15); - Specifies the text color of the .lnh2 element.
+text-align: center; - Specifies that the text within the .lnh2 element should be centered.
+margin-bottom: 20px; - Specifies the margin on the bottom of the .lnh2 element.
+padding: 1em; - Specifies the padding inside the .lnh2 element.
+
+.post
+display: flex; - Specifies that the .post element should be a flexible container, allowing its child elements to be laid out in a flexible manner.
+align-items: center; - Specifies that child elements of .post should be vertically centered.
+margin-bottom: 20px; - Specifies the margin on the bottom of the .post element.
+position: relative; - Specifies that the .post element should be positioned relative to its normal position on the page.
+cursor: pointer; - Specifies that the cursor should change to a pointer when hovering over the .post element.
+
+.post img
+margin-right: 20px; - Specifies the margin on the right of the img element within .post.
+vertical-align: middle; - Specifies that the img element should be vertically aligned with the middle of the text in .post.
+width: 350; - Specifies the width of the img element within .post.
+height: 200; - Specifies the height of the img element within .post.
+max-width: 300px; - Specifies the maximum width of the img element within .post.
+
+.post p
+margin: 0; - Specifies that the p element within .post should have no margin.
+font-size: 1.1em; - Specifies the font size for the p element within .post.
+line-height: 1.5; - Specifies the line height for the p element within .post.
+display: flex; - Specifies that the p element within .post should be a flexible container, allowing its child elements to be laid out in a flexible manner.
+align-items: center; - Specifies that child elements of p within .post should be vertically centered.
+justify-content: center; - Specifies that child elements of p within .post should be horizontally centered.
+
+.post:hover
+Specifies that when the mouse hovers over the .post element, its background color should change.
+background-color: azure; - Specifies the new background color for the .post element when hovered over.
