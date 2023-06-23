@@ -436,3 +436,19 @@ border-radius: 50%; - Specifies the border radius for the .infimg2 element, maki
 max-width: 250px; - Specifies the maximum width of the .infimg2 element.
 .infimg1 - Specifies the float and margin for the first image in the about articles news section.
 .infimg2 - Specifies the float, margin, border radius, and maximum width for the second image in the about articles news section.
+
+|footer|
+footer
+background-color: rgba(80, 30, 100, 1); - Specifies the background color for the footer element.
+color: aliceblue; - Specifies the text color for the text within the footer element.
+padding: 0.25em 0; - Specifies the padding on the top and bottom of the footer element.
+text-align: center; - Specifies that the text within the footer element should be centered.
+.menu
+max-width: 990px; - Specifies the maximum width of the .menu element.
+
+|Others|
+.NAimg
+width: 200; - Specifies the width of the .NAimg element. (missing unit of measurement)
+height: 150; - Specifies the height of the .NAimg element. (misssing unit of measurement)
+max-width: 200px; - Specifies the maximum width of the .NAimg element.
+
