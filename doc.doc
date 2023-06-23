@@ -452,3 +452,26 @@ width: 200; - Specifies the width of the .NAimg element. (missing unit of measur
 height: 150; - Specifies the height of the .NAimg element. (misssing unit of measurement)
 max-width: 200px; - Specifies the maximum width of the .NAimg element.
 
+.Social
+padding: 5px; - Specifies the padding on all sides of the .Social element.
+float: left; - Specifies that the .Social element should be floated to the left of the page.
+display: block; - Specifies that the .Social element should be displayed as a block element.
+
+main
+flex: 1; - Specifies that the main element should be flexible and grow as much as possible to fill the available space.
+ul ul
+display: none; - Specifies that nested ul elements should not be displayed by default.
+ul li:hover > ul
+Specifies that when a li element within a ul element is hovered over, its nested ul element should be displayed.
+display: block; - Specifies that the nested ul element should be displayed when the li element is hovered over.
+
+.signupnav
+font: bold; - Specifies that the text within the .signupnav element should be bold.
+font-size: medium; - Specifies the font size for the text within the .signupnav element.
+
+.box
+height: 100px; - Specifies the height of the .box element.
+width: 200px; - Specifies the width of the .box element.
+padding: 20px; - Specifies the padding on all sides of the .box element.
+margin: auto; - Specifies that the .box element should be centered horizontally within its parent element.
+border: 5px rgba(0, 0, 0, 0.2); - Specifies the border width, style, and color for the .box element.
