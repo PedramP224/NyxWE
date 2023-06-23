@@ -407,3 +407,32 @@ justify-content: center; - Specifies that child elements of p within .post shoul
 .post:hover
 Specifies that when the mouse hovers over the .post element, its background color should change.
 background-color: azure; - Specifies the new background color for the .post element when hovered over.
+
+|about.index body|
+.infC
+margin: 1em; - Specifies the margin on all sides of the .infC element.
+The purpose of the .infC class in the about articles news section is to specify the margin for the container element that holds the section.
+The margin: 1em; property for the .infC class sets a margin of 1em (which is equivalent to the font size of the parent element) on all sides of the container element.
+This creates some space between the container element and adjacent elements on the page, and helps to visually separate the about articles news section from other content on the page.
+By setting the margin using a class, the margin can be easily applied to multiple elements with the same class name, rather than having to apply the margin individually to each element.
+
+.GinfC
+max-width: 900px; - Specifies the maximum width of the .GinfC element.
+margin: 0 auto; - Specifies that the .GinfC element should have auto margins on the left and right, which centers it horizontally within its parent element.
+Specifies the maximum width and horizontal centering for the container element that holds the content of the about articles news section.
+
+.infH
+font-family: "Franklin Gothic medium"; - Specifies the font family for the text within the .infH element.
+font-size: 2.5em; - Specifies the font size for the text within the .infH element.
+.infH - Specifies the font family and font size for the heading of the about articles news section.
+
+.infimg1
+float: left; - Specifies that the .infimg1 element should float to the left of the text.
+margin: 15px; - Specifies the margin on all sides of the .infimg1 element.
+.infimg2
+float: right; - Specifies that the .infimg2 element should float to the right of the text.
+margin: 15px; - Specifies the margin on all sides of the .infimg2 element.
+border-radius: 50%; - Specifies the border radius for the .infimg2 element, making it circular.
+max-width: 250px; - Specifies the maximum width of the .infimg2 element.
+.infimg1 - Specifies the float and margin for the first image in the about articles news section.
+.infimg2 - Specifies the float, margin, border radius, and maximum width for the second image in the about articles news section.
